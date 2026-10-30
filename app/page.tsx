@@ -1,0 +1,11 @@
+import About from '@/components/scenes/About';
+import Contact from '@/components/scenes/Contact';
+import AllWork from '@/components/scenes/AllWork';
+import DraggableBadge from '@/components/avatar/DraggableBadge';
+import LayerScenes from '@/components/scenes/LayerScenes';
+import DitherPreview from '@/components/scenes/DitherPreview';
+import HeroAvatar from '@/components/avatar/HeroAvatar';
+import HeroStatement from '@/components/scenes/HeroStatement';
+export default function Home() {
+ return <main id="main"><section className="hero paper" id="top" aria-labelledby="hero-title"><div className="hero-meta"><span>INDEPENDENT DEVELOPER <span className="meta-cross">✳</span></span><span>AVAILABLE FOR OPPORTUNITIES <i/></span></div><div className="hero-main"><div className="eyebrow"><span className="asterisk">✳</span> THE PORTFOLIO OF JOSHVA <span className="eyebrow-line"/> 2024 — 2027</div><h1 id="hero-title">Thoughtful<br/>work, <em>full</em><br/><em>stack.</em><span className="period">✳</span></h1><div className="hero-bottom"><div className="intro-index"><span>INTRODUCTION</span><b>01 / 05</b></div><HeroStatement/><a className="round-arrow" href="#work" aria-label="Explore the work">↘</a></div></div><div className="hero-side"><div className="side-label">A LITTLE BIT OF EVERYTHING <span>↓</span></div><div className="stack-art" aria-label="Five layers of the full stack"><div className="stack-layer layer-front"><span>01</span><b>FRONTEND</b><span>↗</span></div><div className="stack-layer layer-api"><span>02</span><b>API</b><span>↗</span></div><div className="stack-layer layer-db"><span>03</span><b>DATABASE</b><span>↗</span></div><div className="stack-layer layer-ai"><span>04</span><b>AI</b><span>↗</span></div><div className="stack-layer layer-dev"><span>05</span><b>DEVOPS</b><span>↗</span></div></div><div className="side-foot"><span>THE FULL STACK<br/>FROM TOP TO BOTTOM.</span><span>FIG. 01 — 05</span></div></div><div className="avatar-intro"><HeroAvatar/></div><div className="hero-footer"><span>SCROLL TO EXPLORE <span className="scroll-arrow">↓</span></span><span>DESIGNED & BUILT WITH INTENTION</span><span>© JOSHVA 2026</span></div></section><DitherPreview/><LayerScenes/><AllWork/><DraggableBadge/><About/><Contact/></main>
+}

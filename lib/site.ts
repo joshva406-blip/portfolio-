@@ -1,0 +1,2 @@
+/** A canonical URL is deliberately not guessed before deployment. */
+export function siteUrl():string|undefined {const configured=process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : undefined);if(!configured)return undefined;try{const url=new URL(configured);if(!['https:','http:'].includes(url.protocol))return undefined;return url.origin;}catch{return undefined;}}

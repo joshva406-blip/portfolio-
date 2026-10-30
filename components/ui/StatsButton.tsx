@@ -1,0 +1,3 @@
+'use client';
+import { useState } from 'react';
+export default function StatsButton(){const [output,setOutput]=useState('');const [loading,setLoading]=useState(false);async function load(){setLoading(true);try{const response=await fetch('/api/stats');const data=await response.json();setOutput(JSON.stringify(data,null,2));}catch{setOutput('{ "error": "Could not reach the stats endpoint." }');}finally{setLoading(false)}}return <div className="stats-control">{output&&<pre aria-live="polite">{output}</pre>}<button type="button" onClick={load} disabled={loading}>{loading?'LOADING…':'TRY STATS ↗'}</button></div>}
